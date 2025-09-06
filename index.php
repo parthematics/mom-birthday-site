@@ -1,10 +1,12 @@
 <?php
-header('Cache-Control: no-cache, no-store, must-revalidate');
-header('Pragma: no-cache');
-header('Expires: 0');
 $mom_name = "Mom";
-$age = 53;
 $birth_date = "September 10, 1973";
+
+// calculate age dynamically
+$birthday = new DateTime('1973-09-05');
+$today = new DateTime();
+$age = $today->diff($birthday)->y;
+
 $current_year = date('Y');
 $last_updated = date('F Y');
 ?>
