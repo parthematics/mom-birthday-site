@@ -97,7 +97,7 @@ $last_updated = date('F Y');
     <div class="message">
         <p>Dear <?php echo $mom_name; ?>,</p>
 
-        <p>Today we celebrate you turning <?php echo $age; ?>! Another year older, another year wiser, and another year of being the most amazing mom anyone could ask for.</p>
+        <p>Today we celebrate you turning <?php echo $age; ?>! Another year older, another year wiser, and another year of being the most best mom anyone could ask for.</p>
 
         <p>Thank you for all the home-cooked meals, the late-night talks, the endless support, and for always believing in us. Your love has been the foundation of our family.</p>
 
