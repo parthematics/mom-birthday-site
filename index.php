@@ -1,6 +1,6 @@
 <?php
 $mom_name = "Mom";
-$age = 52;
+$age = 54;
 $birth_date = "September 10, 1973";
 $current_year = date('Y');
 $last_updated = date('F Y');
