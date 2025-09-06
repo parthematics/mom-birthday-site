@@ -119,7 +119,7 @@ $last_updated = date('F Y');
             <td>Spending time with family, cooking yummy treats, and spreading knowledge</td>
         </tr>
         <tr>
-            <td><strong>Our wish for you:</strong></td>
+            <td><strong>Birthday wish:</strong></td>
             <td>Health, happiness, and more quality time with family</td>
         </tr>
     </table>
