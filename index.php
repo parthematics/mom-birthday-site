@@ -116,7 +116,7 @@ $last_updated = date('F Y');
         </tr>
         <tr>
             <td><strong>Favorite things:</strong></td>
-            <td>Family, good books, morning coffee</td>
+            <td>Spending time with family, cooking yummy treats, and spreading knowledge</td>
         </tr>
         <tr>
             <td><strong>Birthday wish:</strong></td>
