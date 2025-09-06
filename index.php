@@ -3,7 +3,7 @@ header('Cache-Control: no-cache, no-store, must-revalidate');
 header('Pragma: no-cache');
 header('Expires: 0');
 $mom_name = "Mom";
-$age = 52;
+$age = 53;
 $birth_date = "September 10, 1973";
 $current_year = date('Y');
 $last_updated = date('F Y');
