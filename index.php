@@ -104,11 +104,13 @@ $last_updated = date('F Y');
 
         <p>Today we celebrate you turning <?php echo $age; ?>, and we can't help but think about all the ways you've shaped us into who we are. You've never just been our mom - you've been our biggest supporter, our toughest coach, and somehow always our softest place to land.</p>
 
-        <p>We think about how you used to sneak back stacks of math contest papers for Parth, watching his eyes light up as he dove into them immediately. Or how you'd drop everything to drive him to competitions you'd never even heard of, simply because you believed in his dreams. That's who you are. You fuel our passions even when you don't fully understand them.</p>
-
         <p>We remember the late nights when you couldn't sleep until you heard the door close, knowing we were home safe. "SHAPATH?" you'd ask us through skeptical eyes, making sure we'd kept our promises. You've always cared more about our well-being than your own rest.</p>
 
-        <p>You call us out when we're glued to our phones instead of being present with family, reminding us that real life happens away from screens. You bring us chai and fresh fruit even after we say no, because you know what we need better than we do. You turn every daal-ki-roti into a masterpiece, and somehow each one really is better than the last.</p>
+        <p>We've watched you face life's biggest challenges with incredible strength and grace. When cancer tried to slow you down, you fought back with determination that inspired us all. And now, as you return to teaching, we see how giving back to others gives you purpose and joy. You are the most giving person we know, whether it's nurturing your students, caring for your family, or helping anyone who needs it.</p>
+
+        <p>We remember when you used to sneak back stacks of math contest papers for Parth, watching his eyes light up as he dove into them immediately. Or how you'd drop everything to drive him to exams and competitions you didn't even know he had, simply because you believed in his dreams. That's who you are. You fuel our passions even when you don't fully understand them.</p>
+
+        <p>You call us out when we're glued to our phones instead of being present with family (sorry!), reminding us that real life happens away from screens. You bring us chai and fresh fruit even after we say no, because you know what we need better than we do. You turn every daal-ki-roti into a masterpiece, and somehow each one really is better than the last.</p>
 
         <p>You push us to be great - encouraging Ronnie to seek passions like cooking, sending Parth & Krish health videos you know we'll only half-watch, and always challenging us to achieve greater heights. But you also know when to let us spread our wings, even when it means we're further from your nest than you'd like. We promise we'll visit more often.</p>
 
