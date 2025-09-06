@@ -168,7 +168,7 @@ $last_updated = date('F Y');
 
     <div class="footer">
         <p><strong>Happy Birthday Ma!</strong></p>
-        <p>Created with love by Parth</p>
+        <p>Created with love by Parth in PHP</p>
         <p><small>Last updated: <?php echo $last_updated; ?></small></p>
         <p><small>Page generated on <?php echo date('F j, Y \a\t g:i a'); ?></small></p>
     </div>
