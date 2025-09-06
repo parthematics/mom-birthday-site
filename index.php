@@ -95,7 +95,7 @@ $last_updated = date('F Y');
 
     <h2>Birthday Message</h2>
     <div class="message">
-        <p>Dear <?php echo $mom_name; ?>,</p>
+        <p>Dearest <?php echo $mom_name; ?>,</p>
 
         <p>Today we celebrate you turning <?php echo $age; ?>! Another year older, another year wiser, and another year of being the most best mom anyone could ask for.</p>
 
