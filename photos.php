@@ -6,7 +6,7 @@ $total_photos = 50;
 <html>
 
 <head>
-    <title>Mom's Photo Album</title>
+    <title>Photo Album</title>
     <style>
         body {
             font-family: "Times New Roman", Times, serif;
@@ -131,7 +131,7 @@ $total_photos = 50;
 </head>
 
 <body>
-    <h1>Mom's Photo Album</h1>
+    <h1>Photo Album</h1>
 
     <div class="back-link">
         <a href="index.php">&lt; Back to Birthday Page</a>

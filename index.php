@@ -1,6 +1,6 @@
 <?php
 $mom_name = "Mom";
-$birth_date = "September 10, 1973";
+$birth_date = date('F j, Y', strtotime('2025-09-05'));
 
 // calculate age dynamically
 $birthday = new DateTime('1973-09-05');
@@ -98,34 +98,64 @@ $last_updated = date('F Y');
         <p><?php echo $birth_date; ?></p>
     </div>
 
-    <h2>Message</h2>
+    <h2>Our Letter to You</h2>
     <div class="message">
-        <p>Dearest <?php echo $mom_name; ?>,</p>
+        <p>Dearest Ma,</p>
 
-        <p>Today we celebrate you turning <?php echo $age; ?>! Another year older, another year wiser, and another year of being the most best mom anyone could ask for.</p>
+        <p>Today we celebrate you turning <?php echo $age; ?>, and we can't help but think about all the ways you've shaped us into who we are. You've never just been our mom - you've been our biggest supporter, our toughest coach, and somehow always our softest place to land.</p>
 
-        <p>Thank you for all the home-cooked meals, the late-night talks, the endless support, and for always believing in us. Your love has been the foundation of our family.</p>
+        <p>We think about how you used to sneak back stacks of math contest papers for Parth, watching his eyes light up as he dove into them immediately. Or how you'd drop everything to drive him to competitions you'd never even heard of, simply because you believed in his dreams. That's who you are. You fuel our passions even when you don't fully understand them.</p>
 
-        <p>We hope your special day is filled with all your favorite things.</p>
+        <p>We remember the late nights when you couldn't sleep until you heard the door close, knowing we were home safe. "SHAPATH?" you'd ask us through skeptical eyes, making sure we'd kept our promises. You've always cared more about our well-being than your own rest.</p>
+
+        <p>You call us out when we're glued to our phones instead of being present with family, reminding us that real life happens away from screens. You bring us chai and fresh fruit even after we say no, because you know what we need better than we do. You turn every daal-ki-roti into a masterpiece, and somehow each one really is better than the last.</p>
+
+        <p>You push us to be great - encouraging Ronnie to seek passions like cooking, sending Parth & Krish health videos you know we'll only half-watch, and always challenging us to achieve greater heights. But you also know when to let us spread our wings, even when it means we're further from your nest than you'd like. We promise we'll visit more often.</p>
+
+        <p>You've taught us that love isn't always gentle. Sometimes it's staying awake until 1:30 AM so you can hear us come home, sometimes it's saying "no SAD," and sometimes it's asking the hard questions we don't want to hear. But it's always, always putting us first.</p>
+
+        <p>Thank you for being the kind of mother who shows up, who remembers, who cares enough to call us out and love us anyway. Thank you for every sacrifice, every lecture, every daal-roti-kabob wrap, every "chaanta", and every "SHAPATH." You've kept us humble and grounded.</p>
+
+        <p>Today and every day, we're grateful to be your sons.</p>
+
+        <p>With all our love,<br>Parth, Krish, and Ronny</p>
     </div>
 
     <h2>Birthday Statistics</h2>
     <table>
         <tr>
             <td><strong>Age:</strong></td>
-            <td><?php echo $age; ?> years old</td>
+            <td><?php echo $age; ?> years old (perfect square age coming at 64!)</td>
         </tr>
         <tr>
-            <td><strong>Years of being awesome:</strong></td>
-            <td><?php echo $age; ?> and counting</td>
+            <td><strong>Days on Earth:</strong></td>
+            <td><?php echo number_format($age * 365.25); ?> days of spreading joy</td>
+        </tr>
+        <tr>
+            <td><strong>Fibonacci Fun:</strong></td>
+            <td>You've lived through <?php echo floor($age / 8); ?> Fibonacci decades (8, 13, 21, 34, 55...)</td>
+        </tr>
+        <tr>
+            <td><strong>Prime Status:</strong></td>
+            <td><?php echo $age; ?> is <?php
+                                        $is_prime = true;
+                                        if ($age < 2) $is_prime = false;
+                                        for ($i = 2; $i <= sqrt($age); $i++) {
+                                            if ($age % $i == 0) {
+                                                $is_prime = false;
+                                                break;
+                                            }
+                                        }
+                                        echo $is_prime ? "prime" : "composite";
+                                        ?> - just like your one-of-a-kind awesomeness!</td>
+        </tr>
+        <tr>
+            <td><strong>Years of being our superhero:</strong></td>
+            <td><?php echo $age; ?> and counting (infinity more to go!)</td>
         </tr>
         <tr>
             <td><strong>Favorite things:</strong></td>
-            <td>Spending time with family, cooking yummy treats, and spreading knowledge</td>
-        </tr>
-        <tr>
-            <td><strong>Our wish for you:</strong></td>
-            <td>Health, happiness, and more family time</td>
+            <td>Quality time with family, making perfect bhindi and saag, and making sure we're not doing "SAD"...</td>
         </tr>
     </table>
 
