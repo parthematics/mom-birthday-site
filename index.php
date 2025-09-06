@@ -131,7 +131,7 @@ $last_updated = date('F Y');
 
     <h2>Quick Links</h2>
     <p>
-        <a href="photos.php">Memory Lane</a>
+        <a href="photos.php">Photo Album</a>
     </p>
 
     <div class="footer">
