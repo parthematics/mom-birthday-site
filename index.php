@@ -98,7 +98,7 @@ $last_updated = date('F Y');
         <p><?php echo $birth_date; ?></p>
     </div>
 
-    <h2>Birthday Message</h2>
+    <h2>Message</h2>
     <div class="message">
         <p>Dearest <?php echo $mom_name; ?>,</p>
 
