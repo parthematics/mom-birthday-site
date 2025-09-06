@@ -1,18 +1,13 @@
 <?php
-// Simple PHP variables for the birthday site
 $mom_name = "Mom";
 $age = 52;
-$birth_date = "March 15, 2025";
+$birth_date = "September 10, 1973";
 $current_year = date('Y');
 $last_updated = date('F Y');
-
-// You could add more dynamic features here like:
-// - Reading from a simple text file
-// - Basic form handling
-// - Simple visitor counter
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Happy Birthday <?php echo $mom_name; ?></title>
     <style>
@@ -23,13 +18,13 @@ $last_updated = date('F Y');
             margin: 40px;
             line-height: 1.4;
         }
-        
+
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
             text-align: center;
         }
-        
+
         h2 {
             font-size: 18px;
             margin-top: 25px;
@@ -37,25 +32,25 @@ $last_updated = date('F Y');
             border-bottom: 1px solid #cccccc;
             padding-bottom: 5px;
         }
-        
+
         .header {
             text-align: center;
             border-bottom: 2px solid #000000;
             padding-bottom: 15px;
             margin-bottom: 30px;
         }
-        
+
         .age {
             font-size: 36px;
             font-weight: bold;
             color: #0000ff;
         }
-        
+
         .message {
             margin: 20px 0;
             text-align: justify;
         }
-        
+
         .footer {
             margin-top: 40px;
             text-align: center;
@@ -63,33 +58,34 @@ $last_updated = date('F Y');
             border-top: 1px solid #cccccc;
             padding-top: 15px;
         }
-        
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
-        
+
         td {
             border: 1px solid #000000;
             padding: 8px;
             vertical-align: top;
         }
-        
+
         .center {
             text-align: center;
         }
-        
+
         a {
             color: #0000ff;
             text-decoration: underline;
         }
-        
+
         a:visited {
             color: #800080;
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1>Happy Birthday <?php echo $mom_name; ?></h1>
@@ -100,11 +96,11 @@ $last_updated = date('F Y');
     <h2>Birthday Message</h2>
     <div class="message">
         <p>Dear <?php echo $mom_name; ?>,</p>
-        
+
         <p>Today we celebrate you turning <?php echo $age; ?>! Another year older, another year wiser, and another year of being the most amazing mom anyone could ask for.</p>
-        
+
         <p>Thank you for all the home-cooked meals, the late-night talks, the endless support, and for always believing in us. Your love has been the foundation of our family.</p>
-        
+
         <p>We hope your special day is filled with all your favorite things.</p>
     </div>
 
@@ -130,16 +126,17 @@ $last_updated = date('F Y');
 
     <h2>Quick Links</h2>
     <p>
-        <a href="#memories">Favorite Memories</a> | 
-        <a href="photos.php">Photo Album</a> | 
+        <a href="#memories">Favorite Memories</a> |
+        <a href="photos.php">Photo Album</a> |
         <a href="#wishes">Birthday Wishes</a>
     </p>
 
     <div class="footer">
-        <p><strong>Happy Birthday!</strong></p>
-        <p>Created with love by your family</p>
+        <p><strong>Happy Birthday Ma!</strong></p>
+        <p>Created with love by Parth</p>
         <p><small>Last updated: <?php echo $last_updated; ?></small></p>
         <p><small>Page generated on <?php echo date('F j, Y \a\t g:i a'); ?></small></p>
     </div>
 </body>
+
 </html>
