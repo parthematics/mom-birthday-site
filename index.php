@@ -29,7 +29,8 @@ if (!$authenticated) {
 
     <head>
         <title>Family Access Required</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
         <style>
             body {
                 font-family: "Times New Roman", Times, serif;
@@ -109,7 +110,8 @@ $last_updated = date('F Y');
 
 <head>
     <title>Happy Birthday <?php echo $mom_name; ?></title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <style>
         body {
             font-family: "Times New Roman", Times, serif;
