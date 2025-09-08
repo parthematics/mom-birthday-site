@@ -34,8 +34,8 @@ if (!$authenticated) {
         <style>
             body {
                 font-family: "Times New Roman", Times, serif;
-                background-color: #ffffff;
-                color: #000000;
+                background-color: #e8e8e8;
+                color: #333333;
                 margin: 40px;
                 text-align: center;
                 line-height: 1.4;
@@ -45,7 +45,9 @@ if (!$authenticated) {
                 max-width: 400px;
                 margin: 100px auto;
                 padding: 30px;
-                border: 2px solid #000000;
+                border: 2px solid #666666;
+                background-color: #f5f5f5;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
             }
 
             input[type="password"] {
@@ -53,15 +55,16 @@ if (!$authenticated) {
                 font-size: 16px;
                 padding: 8px;
                 margin: 10px;
-                border: 1px solid #000000;
+                border: 2px inset #cccccc;
+                background-color: #ffffff;
             }
 
             input[type="submit"] {
                 font-family: "Times New Roman", Times, serif;
                 font-size: 16px;
                 padding: 8px 20px;
-                background-color: #ffffff;
-                border: 2px solid #000000;
+                background-color: #e0e0e0;
+                border: 2px outset #cccccc;
                 cursor: pointer;
             }
 
@@ -115,9 +118,12 @@ $last_updated = date('F Y');
     <style>
         body {
             font-family: "Times New Roman", Times, serif;
-            background-color: #ffffff;
-            color: #000000;
-            margin: 40px;
+            background-color: #e8e8e8;
+            color: #333333;
+            margin-right: 100px;
+            margin-left: 100px;
+            margin-top: 40px;
+            margin-bottom: 40px;
             line-height: 1.4;
         }
 
@@ -137,9 +143,11 @@ $last_updated = date('F Y');
 
         .header {
             text-align: center;
-            border-bottom: 2px solid #000000;
+            border-bottom: 2px solid #bbbbbb;
             padding-bottom: 15px;
             margin-bottom: 30px;
+            background-color: #e8e8e8;
+            padding: 10px;
         }
 
         .age {
@@ -164,13 +172,17 @@ $last_updated = date('F Y');
         table {
             width: 100%;
             border-collapse: collapse;
+            background-color: #e8e8e8;
+            color: #333333;
             margin: 20px 0;
         }
 
         td {
-            border: 1px solid #000000;
+            border: 2px inset #bbbbbb;
+            color: #333333;
             padding: 8px;
             vertical-align: top;
+            background-color: #e8e8e8;
         }
 
         .center {

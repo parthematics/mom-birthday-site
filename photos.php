@@ -30,18 +30,68 @@ $total_photos = 51;
     <style>
         body {
             font-family: "Times New Roman", Times, serif;
-            background-color: #ffffff;
-            color: #000000;
-            margin: 40px;
+            background-color: #e8e8e8;
+            color: #333333;
+            margin: 40px 120px;
             line-height: 1.4;
+        }
+
+        /* Responsive breakpoints: 5->4->3->2 columns */
+        @media (max-width: 1200px) {
+            body {
+                margin: 40px 80px;
+            }
+
+            .photo-cell {
+                width: 25%;
+            }
+
+            /* 4 per row */
+        }
+
+        @media (max-width: 900px) {
+            body {
+                margin: 40px 60px;
+            }
+
+            .photo-cell {
+                width: 33.33%;
+            }
+
+            /* 3 per row */
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 20px 10px;
+            }
+
+            .photo-cell {
+                width: 50%;
+                /* 2 per row */
+                padding: 5px 2px;
+            }
+
+            .photo-thumbnail {
+                width: 120px;
+                height: 120px;
+            }
+
+            .photo-grid {
+                border-spacing: 2px;
+                margin: 0 auto;
+                text-align: center;
+            }
         }
 
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
             text-align: center;
-            border-bottom: 2px solid #000000;
+            border-bottom: 2px solid #666666;
             padding-bottom: 15px;
+            background-color: #e8e8e8;
+            padding: 20px;
         }
 
         .back-link {
@@ -61,7 +111,7 @@ $total_photos = 51;
             display: table;
             width: 100%;
             border-collapse: separate;
-            border-spacing: 10px;
+            border-spacing: 2px;
         }
 
         .photo-row {
@@ -73,13 +123,13 @@ $total_photos = 51;
             width: 20%;
             text-align: center;
             vertical-align: top;
-            border: 1px solid #cccccc;
             padding: 10px;
+            background-color: #e8e8e8;
         }
 
         .photo-thumbnail {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             cursor: pointer;
         }
@@ -186,7 +236,7 @@ $total_photos = 51;
     </div>
 
     <div class="footer">
-        <p><strong>50 Beautiful Memories</strong></p>
+        <p><strong><?php echo $total_photos; ?> Beautiful Memories</strong></p>
         <p><small>Click any photo to view larger</small></p>
         <p><small>Desktop: Use arrow keys ← → to navigate, ESC to close</small></p>
         <p><small>Mobile: Swipe left/right to navigate, tap X to close</small></p>
