@@ -1,4 +1,97 @@
 <?php
+session_start();
+$password = "PaKrRo";
+
+// Check if user is trying to log in
+if ($_POST['password'] ?? false) {
+    if ($_POST['password'] === $password) {
+        $_SESSION['authenticated'] = true;
+        setcookie('mom_site_auth', hash('sha256', $password), time() + (86400 * 30), '/'); // 30 days
+    } else {
+        $error = "Incorrect password. Please try again.";
+    }
+}
+
+// Check authentication - session or cookie
+$authenticated = $_SESSION['authenticated'] ?? false;
+if (!$authenticated && isset($_COOKIE['mom_site_auth'])) {
+    if ($_COOKIE['mom_site_auth'] === hash('sha256', $password)) {
+        $_SESSION['authenticated'] = true;
+        $authenticated = true;
+    }
+}
+
+// Show login form if not authenticated
+if (!$authenticated) {
+?>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Family Access Required</title>
+        <style>
+            body {
+                font-family: "Times New Roman", Times, serif;
+                background-color: #ffffff;
+                color: #000000;
+                margin: 40px;
+                text-align: center;
+                line-height: 1.4;
+            }
+
+            .login-form {
+                max-width: 400px;
+                margin: 100px auto;
+                padding: 30px;
+                border: 2px solid #000000;
+            }
+
+            input[type="password"] {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 16px;
+                padding: 8px;
+                margin: 10px;
+                border: 1px solid #000000;
+            }
+
+            input[type="submit"] {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 16px;
+                padding: 8px 20px;
+                background-color: #ffffff;
+                border: 2px solid #000000;
+                cursor: pointer;
+            }
+
+            .error {
+                color: red;
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="login-form">
+            <h1>Chopra Family Only</h1>
+            <p>This is a private site for Mom.<br>Please enter the family password:</p>
+
+            <?php if (isset($error)): ?>
+                <div class="error"><?php echo $error; ?></div>
+            <?php endif; ?>
+
+            <form method="POST">
+                <input type="password" name="password" placeholder="Enter password" required autofocus>
+                <br>
+                <input type="submit" value="Enter Site">
+            </form>
+        </div>
+    </body>
+
+    </html>
+<?php
+    exit;
+}
+
 $mom_name = "Mom";
 $birth_date = date('F j, Y', strtotime('2025-09-05'));
 

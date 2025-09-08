@@ -1,6 +1,24 @@
 <?php
+session_start();
+$password = "PaKrRo";
+
+// Check authentication - session or cookie
+$authenticated = $_SESSION['authenticated'] ?? false;
+if (!$authenticated && isset($_COOKIE['mom_site_auth'])) {
+    if ($_COOKIE['mom_site_auth'] === hash('sha256', $password)) {
+        $_SESSION['authenticated'] = true;
+        $authenticated = true;
+    }
+}
+
+// Redirect to main page if not authenticated
+if (!$authenticated) {
+    header('Location: index.php');
+    exit;
+}
+
 $cdn_base = "https://d2wh0uzdov71sv.cloudfront.net/mom-memories/";
-$total_photos = 50;
+$total_photos = 51;
 ?>
 <!DOCTYPE html>
 <html>
